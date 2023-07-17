@@ -1,11 +1,13 @@
-function Pizza(props) {
+import React from "react";
+
+function Pizza({ pizzaObj }) {
 	return (
 		<div className="pizza">
-			<img src={props.photoName} alt={props.name} />
+			<img src={pizzaObj.photoName} alt="" />
 			<div>
-				<h3>{props.name}</h3>
-				<p>{props.ingredient}</p>
-				<span>{props.price}</span>
+				<h3> {pizzaObj.name} </h3>
+				<p> {pizzaObj.ingredients}</p>
+				<span>{pizzaObj.price}</span>
 			</div>
 		</div>
 	);

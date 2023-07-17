@@ -52,7 +52,7 @@ function App() {
 	return (
 		<div className="container">
 			<Header></Header>
-			<Menu pizzas={pizzaData}></Menu>
+			<Menu pizzaData={pizzaData}></Menu>
 			<Footer></Footer>
 		</div>
 	);
